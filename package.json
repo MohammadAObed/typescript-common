@@ -1,0 +1,44 @@
+{
+  "name": "@mohammad_obed/typescript-common",
+  "version": "0.0.4",
+  "description": "My TypeScript Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./constants": {
+      "types": "./dist/constants/index.d.mts",
+      "default": "./dist/constants/index.mjs"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.mts",
+      "default": "./dist/utils/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx dev.ts"
+  },
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "mohammad_obed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohammadAObed/typescript-common"
+  },
+  "bugs": {
+    "url": "https://github.com/MohammadAObed/typescript-common/issues"
+  },
+  "homepage": "https://github.com/MohammadAObed/typescript-common#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
