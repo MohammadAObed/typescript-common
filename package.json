@@ -1,6 +1,6 @@
 {
   "name": "@mohammad_obed/typescript-common",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "My TypeScript Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,8 +19,12 @@
     }
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsx dev.ts"
+    "build": "npx moc-build",
+    "all": "npx moc-build-all",
+    "size": "npx moc-size",
+    "run": "npx moc-run dev.ts",
+    "check-types": "npx moc-check-types",
+    "lint": "npx moc-lint"
   },
   "keywords": [
     "typescript",
@@ -37,8 +41,14 @@
   },
   "homepage": "https://github.com/MohammadAObed/typescript-common#readme",
   "devDependencies": {
-    "tsup": "^8.5.0",
-    "tsx": "^4.20.3",
+    "@mohammad_obed/config": "^0.0.20",
     "typescript": "^5.9.2"
-  }
+  },
+  "prettier": "@mohammad_obed/config/prettier.config",
+  "size-limit": [
+    {
+      "path": "dist",
+      "limit": "2 kB"
+    }
+  ]
 }

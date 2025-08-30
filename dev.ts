@@ -1,4 +1,7 @@
-import { getRandomNumber } from "./src/utils";
+import { getRandomNumber } from "./src/utils/number";
 
-let rand = getRandomNumber(1, 10);
-console.log(`Random number generated: ${rand}`);
+const minRand = 1;
+const maxrand = 10;
+
+const rand = getRandomNumber(minRand, maxrand);
+console.log(`Random number generated: ${rand.toString()}`);

@@ -1,38 +1,9 @@
-//https://aka.ms/tsconfig
 {
+  "extends": "@mohammad_obed/config/tsconfig.base",
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "outDir": "dist",
-    "rootDir": "src",
-    "moduleResolution": "Bundler",
-    "moduleDetection": "force",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "declaration": true,
-    "declarationMap": true,
-    "strict": true,
-    "alwaysStrict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noStrictGenericChecks": false
-  },
-  "include": ["src"],
-  "exclude": ["dist", "node_modules"]
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
 }
