@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/MohammadAObed/typescript-common#readme",
   "devDependencies": {
-    "@mohammad_obed/config": "^0.0.20",
+    "@mohammad_obed/config": "^0.0.23",
     "typescript": "^5.9.2"
   },
   "prettier": "@mohammad_obed/config/prettier.config",

@@ -1,5 +1,6 @@
 {
   "extends": "@mohammad_obed/config/tsconfig.base",
+  "include": ["src"],
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
